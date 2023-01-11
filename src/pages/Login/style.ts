@@ -11,7 +11,7 @@ background-color: var(--white);
 >div{
     justify-content: center;
     align-items: flex-start;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 `
 export const MainContent = styled.div`
