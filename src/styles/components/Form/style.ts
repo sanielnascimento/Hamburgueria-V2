@@ -21,4 +21,15 @@ export const StyledForm = styled.form`
     width: 330px;
     text-align: center;
   }
+
+  @media (max-width: 930px) {
+    width: 700px;
+    max-width: 84%;
+    align-self: center;    
+  }
+  
+  @media (max-width: 600px) {
+    width: 100%;
+    align-self: center;    
+  }
 `;

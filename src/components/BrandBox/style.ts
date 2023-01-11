@@ -11,6 +11,17 @@ export const StyledBrandBox = styled.div`
   padding: 26px 24px;
   gap: 22px;
   width: 430px;
+
+  @media (max-width: 930px) {
+    width: 90%;
+    max-width: 700px;
+    align-self: center;    
+  }
+  
+  @media (max-width: 930px) {
+    width: 100%;
+    align-self: center;    
+  }
 `;
 
 export const BrandDescription = styled.div`
@@ -52,4 +63,8 @@ background: var(--white) url(${ellipse});
 background-repeat: space;
 background-size: 24px;
 color: var(--primary);
+
+@media (max-width: 930px) {
+  display: none;  
+}
 `

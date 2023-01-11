@@ -18,12 +18,16 @@ export const BrandBox = () => {
         <BagBox>
           <StyledBagIcon />
         </BagBox>
-        <StyledText className="" lineHeight="1" id="s" tag="p" body="2" color="--grey3">{`
-          A vida é como um sanduíche, é preciso recheá-la com os
-          ${<StyledText className="" lineHeight="1" id="z" tag="span" body="3" color="--grey6">melhores
-          </StyledText>}
+        <StyledText
+          className=""
+          lineHeight="1"
+          id="s"
+          tag="p"
+          body="2"
+          color="--grey3"
+        >
+          A vida é como um sanduíche, é preciso recheá-la com os melhores
           ingredientes.
-        `}
         </StyledText>
       </BrandDescription>
       <StyledEllipsesBox />
