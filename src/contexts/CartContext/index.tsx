@@ -21,6 +21,11 @@ export const CartProvider = ({ children }: iDefaultProviderProps) => {
     setInputDrop(!inputDrop);
   };
 
+  const removeFromCart = (currentId:string) => {
+    const newList = currentSale.filter((elt) => elt.id !== currentId);
+    setCurrentSale(newList);
+  };
+
   const handleClick = (currentId: string) => {
     const saleProduct = products.find((elt) => elt.id === currentId);
     if (!currentSale.includes(saleProduct as iProducts)) {
@@ -46,7 +51,7 @@ export const CartProvider = ({ children }: iDefaultProviderProps) => {
 
   return (
     <CartContext.Provider
-      value={{ currentSale, setCurrentSale, showModal, openCart, handleClick, dropInput, inputDrop, filtered, submitFilter, revomeFiltered }}
+      value={{ currentSale, setCurrentSale, showModal, openCart, handleClick, dropInput, removeFromCart, inputDrop, filtered, submitFilter, revomeFiltered }}
     >
       {children}
     </CartContext.Provider>

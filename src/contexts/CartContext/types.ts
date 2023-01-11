@@ -9,6 +9,7 @@ export interface iCartContext {
   setCurrentSale:React.Dispatch<React.SetStateAction<iProducts[]>>;
   handleClick: (currentId: string) => void;
   openCart: () => void;
+  removeFromCart: (currentId: string) => void;
   dropInput: () => void;
   submitFilter: (data: iSearch) => void;
   revomeFiltered: () => void
