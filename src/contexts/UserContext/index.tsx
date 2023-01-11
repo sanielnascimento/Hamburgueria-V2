@@ -26,6 +26,7 @@ export const UserProvider = ({ children }:iDefaultProviderProps) => {
 
   useEffect(() => {
     (async () => {
+      setLoading(true);
       const token = localStorage.getItem("@TOKEN");
       if (!token) {
         return loggout();
@@ -37,7 +38,7 @@ export const UserProvider = ({ children }:iDefaultProviderProps) => {
           },
         });
         setProducts(data);
-        console.log(data);        
+        navigate("/home");
         setLoading(false);
       } catch (error) {
         console.error(error);
